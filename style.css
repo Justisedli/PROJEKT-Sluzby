@@ -3,12 +3,22 @@ body{background-color: #FAFAFA;}
 
 h1, h2, p, a {font-family: "Montserrat", sans-serif;}
 h1, h2{color:#000000;}
+h1{ position: relative;}
+h1::after {
+    content: "";
+    position: absolute;
+    align-items: center;
+    bottom: -10px; 
+    width: 60px; 
+    height: 2px; 
+    background-color: #407BFF; 
+  }
 p{color:#8B8B8B;}
 
  a.modre{ background-color: #407BFF; border: 1px solid #407BFF; border-radius: 20px; text-decoration: none; color: #FAFAFA; padding: 10px 30px;}
  a.sede{ background-color: #8B8B8B; border: 1px solid #8B8B8B; border-radius: 20px; text-decoration: none;color: #FAFAFA; padding: 10px 30px; }
 
- .horni, .stred, .dole{display: flex; border-radius: 10px; box-shadow:0 2px 3px rgba(0, 0, 0, 0.15); padding: 10px; background-color: white; justify-content: space-around; flex-grow: 0;}
+ .horni, .stred, .dole{display: flex; border-radius: 10px; box-shadow:0 2px 3px rgba(0, 0, 0, 0.15); padding: 10px; background-color: white; justify-content: space-around; }
 .stred{ margin: 10px;}
 @media screen and (max-width: 640px){
     
