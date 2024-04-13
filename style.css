@@ -1,26 +1,87 @@
 html { box-sizing: border-box; }
 body{background-color: #FAFAFA;}
 
+
 h1, h2, p, a {font-family: "Montserrat", sans-serif;}
 h1, h2{color:#000000;}
-h1{ position: relative;}
+h2{font-size: 16px; padding-top: 50px; font-weight: medium; text-align: left;}
+h1{ position: relative; font-size: 28px; font-weight: medium; }
 h1::after {
     content: "";
     position: absolute;
-    align-items: center;
+    
+    margin-left:  auto;
+    margin-right: auto;
     bottom: -10px; 
     width: 60px; 
     height: 2px; 
     background-color: #407BFF; 
+    left: 0; 
+  right: 0;
+  
   }
-p{color:#8B8B8B;}
+p{color:#8B8B8B; font-size: 16px;}
+.trojice { font-size:13px; justify-content: space-around; display: flex;  ;}
+.textik{font-size: 13px; font-weight: light;}
+ a.modre{ background-color: #407BFF; border: 1px solid #407BFF; border-radius: 20px; text-decoration: none; color: #FAFAFA; padding: 10px 30px;  font-size: 14px;}
+ a.sede{ background-color: #8B8B8B; border: 1px solid #8B8B8B; border-radius: 20px; text-decoration: none;color: #FAFAFA; padding: 10px 30px; font-size: 14px;}
 
- a.modre{ background-color: #407BFF; border: 1px solid #407BFF; border-radius: 20px; text-decoration: none; color: #FAFAFA; padding: 10px 30px;}
- a.sede{ background-color: #8B8B8B; border: 1px solid #8B8B8B; border-radius: 20px; text-decoration: none;color: #FAFAFA; padding: 10px 30px; }
+ .horni, .stred, .dole{display: flex; border-radius: 10px; box-shadow:0 2px 3px rgba(0, 0, 0, 0.15); padding: 10px; background-color: white; justify-content: space-around;}
+.stred{ margin: 10px 0px;}
 
- .horni, .stred, .dole{display: flex; border-radius: 10px; box-shadow:0 2px 3px rgba(0, 0, 0, 0.15); padding: 10px; background-color: white; justify-content: space-around; }
-.stred{ margin: 10px;}
+.prvni, .druha, .treti{ display: flex; flex-direction: column; align-items:center;}
+#cestovatel{ align-items: center;  margin-left: auto; margin-right: auto;}
 @media screen and (max-width: 640px){
+  .happy{position: relative; display: flex;}
+  
+  h1, h2,p{ text-align: center;}
+.modre{margin-bottom: 10px;}
+  
+    body { padding-left: 20px; padding-right: 20px;}
+    .popis{ margin-bottom: 30px;}
+
+    .trojice { flex-direction: column; max-width: 460px; align-items: stretch; width: 100%;}
+   .horni, .stred, .dole{ justify-content: space-around; display: flex; max-width: 460px; height: 80px; align-items: center; max-width: 460px;}
+p{max-width: 460px; }
+.tlacitka{display: flex; flex-direction: column; text-align: center;}
+   }
     
-    
+@media screen and
+(min-width: 640px) and (max-width: 1100px) {
+  .happy{position: relative; display: flex; flex: wrap;}
+  body{ min-width: 640px;}
+  h1, h2,p{ text-align: center;}
+  p { padding-left: 109px; padding-right: 109px;max-width: 550px;}
+  .popis{ margin-bottom: 30px;}
+ 
+  .tlacitka{justify-content: center
+    ; display: flex; width: 100%;}
+  .modre{ margin-right: 10px;}
+.trojice{  display: flex; align-items: stretch; justify-content: space-around; flex: wrap; width: 100%;}
+
+.textik{ padding: 0;}
+  .horni, .stred, .dole { padding: 10px O; display: flex; flex-direction: column; align-items: center; max-width: 230px; padding-top: 30px; padding-bottom: 20px;}
+  .stred{ margin: 0}
+  
+
+}
+@media screen and (min-width: 1100px){ 
+  body{ max-width: 1040px; margin:  133px 82px;}
+  .vrsek{ display: flex; ; width: 100%; }
+.happy{order: 2; flex-basis: 50%; align-items: center; justify-content: center; display: flex;}
+img #cestovatel { max-width: 425px; margin: 0 auto ;}
+.prvni {max-width:490px; flex-basis: 50%;
+  margin-right: 60px;  display: flex; flex-direction: column;}
+  p{ margin-bottom: 30px;}
+  .prvni, .druha, .treti{ display: flex; flex-direction: column; align-items: flex-start;}
+  h1::after {
+    content: "";
+    position: absolute;
+    text-align: left;
+    bottom: -10px; 
+    width: 60px; 
+    height: 2px; 
+    background-color: #407BFF; 
+    left: 0; 
+  right: 0;
 }
